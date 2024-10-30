@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Sacramento&display=swap" rel="stylesheet">
+
     <title>CHOCOFLIX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -16,25 +17,37 @@
         }
 
         header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-bottom: solid 2px #8b0609;
-            font-size: 32px;
-            color: #d90d12;
-            background-color: #240201;
-            font-family: "Sacramento", cursive;
-            text-align: center;
             padding: 20px;
+            background-color: #240201;
             text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header img {
+            height: 60px;
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #FFDE59;
+            font-family: "Sacramento", cursive;
+            margin: 0;
         }
 
         .chamada {
             background: #460c18;
-            padding-bottom: 50px;
-            padding-top: 50px;
+            padding: 50px 10%;
             display: flex;
             justify-content: center;
-            flex-direction: column;
             align-items: center;
-            margin: 30px 10%;
+            flex-direction: column;
+            margin: 30px auto;
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
@@ -42,12 +55,6 @@
         .chamada-texto {
             text-align: center;
             margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: #FFDE59;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
 
         p {
@@ -101,8 +108,16 @@
             border: 3px solid #FFDE59;
         }
 
-        /* Responsividade */
         @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header img {
+                margin-right: 0;
+            }
+
             .chamada {
                 padding: 20px 5%;
             }
@@ -127,16 +142,19 @@
 </head>
 
 <body>
-    <header>CHOCOFLIX</header>
+    <header>
+        <img src="WhatsApp_Image_2024-10-25_at_16.51.24-removebg-preview.png" alt="Logo Chocoflix" />
+        <h1>CHOCOFLIX</h1>
+    </header>
 
     <section class="chamada">
         <div class="chamada-texto">
-            <h1>Palmeiras não tem mundial</h1>
-            <p>Ainda buscando a taça que nunca veio! Será que um dia vai quebrar o jejum?</p>
+            <h1>Transformers One</h1>
+            <p>O novo filme dos Transformers está chegando! Confira o trailer e prepare-se para a aventura.</p>
         </div>
 
         <div>
-            <iframe src="https://www.youtube.com/embed/gt_fAE1Eg2Q?si=E" 
+            <iframe src="https://www.youtube.com/embed/w448tl4gTqI" 
                     title="YouTube video player" frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen></iframe>
@@ -146,20 +164,20 @@
     <section class="categoria">
         <h2>Filmes e Séries</h2>
         <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=cs15QqG6Gjc">
-                <img src="https://img.youtube.com/vi/cs15QqG6Gjc/maxresdefault.jpg" />
+            <a href="https://www.youtube.com/watch?v=jI55BgXET3Y">
+                <img src="https://img.youtube.com/vi/jI55BgXET3Y/maxresdefault.jpg" />
             </a>
-            <a href="https://www.youtube.com/watch?v=nCmIwcycUJ8">
-                <img src="https://img.youtube.com/vi/nCmIwcycUJ8/maxresdefault.jpg" />
+            <a href="https://www.youtube.com/watch?v=dN3pbtj_6CE">
+                <img src="https://img.youtube.com/vi/dN3pbtj_6CE/maxresdefault.jpg" />
             </a>
-            <a href="https://www.youtube.com/watch?v=FvRmEapoHRc">
-                <img src="https://img.youtube.com/vi/FvRmEapoHRc/maxresdefault.jpg" />
+            <a href="https://www.youtube.com/watch?v=84fm8i2bsbs">
+                <img src="https://img.youtube.com/vi/84fm8i2bsbs/maxresdefault.jpg" />
             </a>
-            <a href="https://www.youtube.com/watch?v=Ipkw_hWW-Hw">
-                <img src="https://img.youtube.com/vi/Ipkw_hWW-Hw/maxresdefault.jpg" />
+            <a href="https://www.youtube.com/watch?v=d35x2_25ulM">
+                <img src="https://img.youtube.com/vi/d35x2_25ulM/maxresdefault.jpg" />
             </a>
-            <a href="https://www.youtube.com/watch?v=d4DzMNGoyis">
-                <img src="https://img.youtube.com/vi/d4DzMNGoyis/maxresdefault.jpg" />
+            <a href="https://www.youtube.com/watch?v=hctmB737Maw">
+                <img src="https://img.youtube.com/vi/hctmB737Maw/maxresdefault.jpg" />
             </a>
         </div>
     </section>
